@@ -1,0 +1,80 @@
+/* body {
+  background-color: lightpink;
+}
+.will-you {
+  height: 400px;
+  width: 700px;
+  background-color: aqua;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px black;
+
+} */
+body {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;      /* Centers vertically */
+  height: 100vh;            /* Full viewport height */
+  margin: 0;
+  background-color: rgb(244, 165, 217); /* Soft pink background */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.will-you {
+  width: 800px;
+  height: 400px;
+  padding: 30px; /* Added padding for spacing */
+  background: linear-gradient(135deg, rgb(230, 133, 247), rgb(200, 100, 230)); /* Gradient effect */
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Stack text and buttons */
+  align-items: center;
+
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Smooth shadow for depth */
+  margin-top: 200px;
+  font-size: xx-large;
+
+}
+
+/* Button container to align buttons side by side */
+.button-container {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+  margin-top: 200px;
+}
+
+/* Style for buttons */
+button {
+  width: 120px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+button:first-of-type {
+  background-color: #ff4081; /* Vibrant pink */
+  color: white;
+}
+
+button:first-of-type:hover {
+  background-color: #e60073; /* Darker pink */
+}
+
+button:last-of-type {
+  background-color: #ccc; /* Grey for "No" */
+  color: black;
+}
+
+button:last-of-type:hover {
+  background-color: #999; /* Darker grey */
+}

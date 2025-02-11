@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day</title>
+  
+  <link rel="stylesheet" href="valentine-page.css">
+</head>
+<body>
+
+  <!-- Music Button -->
+  <div class="music-container">
+    <button class="music-button" onclick="toggleMusic()">🎵 Play Music</button>
+    <audio id="bg-music">
+      <source src="SpotiDown.App - Dhadak - Title Track - Ajay Gogavale.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <div class="rhyme">
+    Kaha Jaipur aur kaha Kolkata, kitni dur! But still, we met.  <br><br>
+    Culture alag, khana alag, sarkein alag, Sarkar alag, sab kuch alag alag, par fir bhi hum mile. <br><br>
+
+    I, the most introvertest boy in the galaxy, fell in love with a girl in my 1st year of college. <br><br>
+    Abhi raat ke 2 baj rhe hai, tu thodi der pehle soyi hai, aur maine ek pinky promise bhi kiya tha ki jo m bna rha hu wo pehle tujhe hi dikhaunga. And here it is, I kept my promise. <br><br>
+
+    Bohottttt pyaar krta hu baby aapse, it feels so pure with you. <br><br>
+    Bohot maza aa rha hai likhne m. Sach m yaar, kabhi nahi socha tha ki koi aisi hogi jisko m itna pyaar karunga, aur wo bhi usse zyada pyaar karegi mujhe... Bas palak rhe jana!<br><br>
+    Saath-saath kr lenge sab kuch, kya hi aayega mushkilein, kitni hi badi hogi? Kr lenge dono tackle. Tum strong ho. Pura bharosa hai aapke upar. <br><br>
+
+    Aur m ghar ka chota beta hoon, mummy ka bohot ladla bhi hu, toh mujhe zyada pyaar banta hai. <br><br>
+    Palak, yaar bas meri rehna. Aur m thoda waisa type ka hu, I know you’re getting me. Mujhe sona hai abhi, neend aa rhi hai bohot, and I love you soooo much. <br><br>
+
+    Aur... fuck off, aur pyaar karo mujhse, bilkul pyaar nahi karti aajkal. Huhh!! 
+  </div>
+
+  <script>
+    let isPlaying = false;
+    const audio = document.getElementById("bg-music");
+    const musicButton = document.querySelector(".music-button");
+
+    function toggleMusic() {
+      if (!isPlaying) {
+        audio.play();
+        musicButton.textContent = "⏸ Pause Music";
+      } else {
+        audio.pause();
+        musicButton.textContent = "🎵 Play Music";
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
+
+</body>
+</html>

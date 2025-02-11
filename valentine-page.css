@@ -1,0 +1,54 @@
+/* Keep the existing background and rhyme styling */
+body {
+  background-color: rgb(58, 37, 54);
+}
+
+.rhyme {
+  font-family: 'Arial', sans-serif;
+  color: #000000;
+  background-color: #ef689e; /* Black background */
+  padding: 20px;
+  max-width: 335px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.8;
+  border: 5px solid #ffffff;
+  font-size: 18px;
+  box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.3);
+}
+
+.rhyme br {
+  margin: 10px 0;
+}
+
+/* Updated Button Styling */
+.music-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.music-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff4081, #ff80ab);
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.music-button:hover {
+  background: linear-gradient(135deg, #e60073, #ff4081);
+  transform: scale(1.1);
+}
+
+.music-button:active {
+  transform: scale(1.05);
+}

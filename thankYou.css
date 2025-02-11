@@ -1,0 +1,76 @@
+/* Full-screen centering */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, rgb(244, 165, 217), rgb(230, 133, 247));
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Main container */
+.thank-you-container {
+  background: linear-gradient(135deg, rgb(230, 133, 247), rgb(200, 100, 230));
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+  width: 600px;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Heading styles */
+.thank-you-text {
+  font-size: 36px;
+  margin-bottom: 10px;
+  animation: zoomIn 1s ease-in-out;
+}
+
+/* Message */
+.message {
+  font-size: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Heart Button */
+.heart-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #ff4081;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(255, 64, 129, 0.3);
+}
+
+.heart-button:hover {
+  background-color: #e60073;
+  transform: scale(1.1);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Zoom-in effect */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
